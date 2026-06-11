@@ -125,8 +125,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.target.rc \
-    init.xiaomi.rc
+    init.target.rc
 
 # Kernel
 TARGET_KERNEL_VERSION := 6.1
