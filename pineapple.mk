@@ -2,9 +2,6 @@
 # Copyright (c) 2024 Paranoid Android
 #
 
-# Blobs device specific first
-$(call inherit-product, vendor/xiaomi/houji/houji-vendor.mk)
-
 TARGET_BOARD_PLATFORM := pineapple
 TARGET_BOOTLOADER_BOARD_NAME := pineapple
 
@@ -335,3 +332,6 @@ $(foreach sdefs, $(sort $(wildcard vendor/qcom/defs/product-defs/system/*.mk)), 
 $(foreach vdefs, $(sort $(wildcard vendor/qcom/defs/product-defs/vendor/*.mk)), \
     $(call inherit-product, $(vdefs)))
 ###################################################################################
+
+# Vendor blobs
+$(call inherit-product, vendor/xiaomi/houji/houji-vendor.mk)
