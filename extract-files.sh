@@ -9,7 +9,7 @@
 
 set -e
 
-DEVICE=xiaomi14
+DEVICE=houji
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

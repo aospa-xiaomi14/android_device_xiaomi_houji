@@ -208,7 +208,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
-TARGET_RECOVERY_FSTAB := device/xiaomi/xiaomi14/init/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/xiaomi/houji/init/recovery.fstab
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
@@ -234,11 +234,11 @@ USE_SENSOR_MULTI_HAL := true
 TARGET_USES_UEFI := true
 
 # VINTF
-DEVICE_FRAMEWORK_MANIFEST_FILE := device/xiaomi/xiaomi14/configs/vintf/framework_manifest.xml
-DEVICE_MANIFEST_FILE := device/xiaomi/xiaomi14/configs/vintf/manifest_pineapple.xml
-DEVICE_MATRIX_FILE := device/xiaomi/xiaomi14/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := device/xiaomi/houji/configs/vintf/framework_manifest.xml
+DEVICE_MANIFEST_FILE := device/xiaomi/houji/configs/vintf/manifest_pineapple.xml
+DEVICE_MATRIX_FILE := device/xiaomi/houji/configs/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    device/xiaomi/xiaomi14/configs/vintf/framework_matrix_xiaomi.xml
+    device/xiaomi/houji/configs/vintf/framework_matrix_xiaomi.xml
 
 # VM
 BOARD_BOOTCONFIG += androidboot.hypervisor.protected_vm.supported=true

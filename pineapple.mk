@@ -3,7 +3,7 @@
 #
 
 # Blobs device specific first
-$(call inherit-product, vendor/xiaomi/xiaomi14/xiaomi14-vendor.mk)
+$(call inherit-product, vendor/xiaomi/houji/houji-vendor.mk)
 
 TARGET_BOARD_PLATFORM := pineapple
 TARGET_BOOTLOADER_BOARD_NAME := pineapple
@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
 
 # Kernel
 TARGET_KERNEL_VERSION := 6.1
-KERNEL_PREBUILT_DIR := device/xiaomi/xiaomi14-kernel
+KERNEL_PREBUILT_DIR := device/xiaomi/houji-kernel
 
 # Keymint
 PRODUCT_COPY_FILES += \
